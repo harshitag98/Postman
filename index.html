@@ -10,7 +10,7 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="prism.css">
     <style>
-        #pre{
+        #pre {
             max-height: 500px;
         }
     </style>
@@ -56,13 +56,14 @@
                 <legend class="col-form-label col-sm-2 pt-0">Request Type</legend>
                 <div class="col-sm-10">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="requestType" id="get" value="GET" checked>
+                        <input class="form-check-input" type="radio" name="requestType" id="getRadio" value="GET"
+                            checked>
                         <label class="form-check-label" for="get">
                             GET
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="requestType" id="post" value="POST">
+                        <input class="form-check-input" type="radio" name="requestType" id="postRadio" value="POST">
                         <label class="form-check-label" for="post">
                             POST
                         </label>
@@ -77,13 +78,14 @@
                 <legend class="col-form-label col-sm-2 pt-0">Content Type</legend>
                 <div class="col-sm-10">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="contentType" id="json" value="json" checked>
+                        <input class="form-check-input" type="radio" name="contentType" id="jsonRadio" value="json"
+                            checked>
                         <label class="form-check-label" for="json">
                             JSON
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="contentType" id="params" value="params">
+                        <input class="form-check-input" type="radio" name="contentType" id="paramsRadio" value="params">
                         <label class="form-check-label" for="params">
                             Custom Parameters
                         </label>
@@ -102,8 +104,9 @@
                 <div class="col-md-4">
                     <input type="text" class="form-control" id="paramValue1" placeholder="Enter parameter 1 value">
                 </div>
-                <button class="btn btn-primary">+</button>
+                <button id="addBtn" class="btn btn-primary">+</button>
             </div>
+            <div id="params"></div>
         </div>
 
         <!-- JSON Box -->
@@ -117,7 +120,7 @@
         </div>
 
         <!-- Submit button -->
-        <div class="form-group row">
+        <div class="form-group row mt-4">
             <div class="col-sm-10">
                 <button id="submit" class="btn btn-primary">Submit</button>
             </div>
@@ -131,7 +134,7 @@
                     <pre id="pre" data-src="prism.js" class="language-javascript" data-src-status="loaded">
                         <code id="responseText" class="language-javascript">Your response will appear here</code>
                     </pre>
-                    
+
                 </div>
             </div>
         </div>
@@ -152,6 +155,7 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
     <script src="prism.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,11 @@
 // Get the parametersBox and jsonBox
 let parametersBox = document.getElementById('parametersBox');
 let jsonBox = document.getElementById('jsonBox');
+let responseBox = document.getElementById('responseBox');
 
 // Initially parametersBox will be hidden because JSON is selected as default
 parametersBox.style.display = 'none';
+responseBox.style.display = 'none';
 
 // Get the Radio elements here
 let jsonRadio = document.getElementById('jsonRadio');
@@ -65,6 +67,7 @@ let submit = document.getElementById('submit');
 
 // To print out the response when user clicks on submit button
 submit.addEventListener('click', () =>{
+    responseBox.style.display = 'block';
     let url = document.getElementById('url').value;
     let requestType = document.querySelector("input[name='requestType']:checked").value;
     let contentType = document.querySelector("input[name='contentType']:checked").value;

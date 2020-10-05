@@ -12,6 +12,7 @@
 * You can either use ```GET``` or ```POST``` request method for your ```API```.
 * You can either choose to input the raw ```JSON``` in the JSON input box or you can choose to enter the ```parameters``` in ```key-value``` pairs for the ```POST``` method.
 * Once you get the response, you can copy the response with a single click on ```copy```.
+* Send multipart/form-data, url encoded, binary, or raw data in request body.
 
 ## Tips for using the Application
 
